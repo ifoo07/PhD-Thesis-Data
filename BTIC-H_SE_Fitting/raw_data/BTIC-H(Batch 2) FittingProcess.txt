@@ -1,0 +1,15 @@
+-open BTIC-H_quartz
+-fit cauchy layer in transparent regime (saved as snap) thickness ~62 nm
+-convert to transaprent bspline, MSE 4.3 with only thickness as free parameter
+-set IR amp to 0
+-set spetral region betwen 600 and 70 nm, res 0.05
+- fit MSE ~1.89 (snap saved)
+- added transmission data (btic-h quartz trans) and turned on backside correction (rev no, # refl 0), MSA and trasnd ata weighting (400%)
+- similar nk, overall MSE ~8
+- convert to anisotropic, MSE down to 1.45, nk Ez showing abs in transaprent regime
+- tuned transparent region, MSE 1.6, no abs in transparent region for Ez. trasn data showing thicknes 58 nm, refl data showing 68 nm
+- changed Ez to cauhcy, MSE increased to 9 (snap saved)
+- added SiO2 (BTIC-H Si) with full MSA fit, MSE 8, no transparent abs (snap saved as ...MSA_aniso)
+- reverted to trans model without SiO2. turned on roughness, k reduced slgihtly, but thickness values converged (68 and 66  respectively for refl and trans). MSE down to 1.56
+- relaxed transparent constraints to allow for some Ez absoption at onset, still less than Ex at onset. Final model is BTIC-H_quartz_bspline_trans_aniso_roughness.SEsnap
+
