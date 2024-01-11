@@ -1,0 +1,11 @@
+-Fit transparent region with cauchy layer
+-convert cauchy fit to transaprent b spline (bspline snap)
+-set IR amp to 0
+- add spectra region betweeen 269 and 600, set res to 0.05 eV
+-refit , MSE down from 6 to 2.5 (bspline_opt snap)
+-convert to aniso, fit (no change in MSE), change Ez to cauhcy, refit, found no sig change in MSE, not sensitive.
+-load optbspline again
+-add Si data, enable MSA, fit, MSE increases to 6
+-change to aniso, MSE drops to <2 (anisobspline_opt_MSA snap)
+-change Ez to cauchy, MSE increases to 13, we have sensitivity (anisobspline_opt_MSA_cauchy EZ snap).
+-went back to opt fit, added transmission data and enabled backside relfection, increased trans weighting to 600% and refitted (pdifcn2_quartz_anisobspline_opt_MSA_full.SEsnap) MSE <2, minor changes in nk.
