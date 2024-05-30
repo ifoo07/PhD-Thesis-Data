@@ -1,9 +1,0 @@
--fit cauuchy, MSE 2, thickness 17.7 nm (snap saved)
--convert to transparent bspline, MSE 4, thickness 17.6 nm
--add spectral region between 530 and 800 nm, refit and MSE down to 2 (snap saved)
--add trans and fit gets very bad (MSE >10), add roughness (15 nm) and fits gets better, MSE 3.4 (snap saved.  transmission still not fitting perfectly.
--convert to aniso. correlation between trans thickness and roughness, MSE 1.3, no trust in sensitivity will check in next step (snap saved)
--fit gets worse with cauchy in ez (MSE 7), reverting to previous snap and adding Si
--after optimising MSE is 17, but optical constants look physical (snap saved)
--added sio2 data and MSE went to 30, glass fit looks bad but trasn and other subs look good, and optical constants as well (snap saved)
--removed SiO2 and glass(and trans) data files, added ITO and ITO trans, refit (snap saved). This is what we will use. Lowest MSE (14) and most physical shape. 
